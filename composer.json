@@ -1,0 +1,38 @@
+{
+    "name": "chevereto/admin",
+    "description": "Admin API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rodolfo Berrios",
+            "email": "rodolfo@chevereto.com"
+        }
+    ],
+    "require": {
+        "chevere/chevere": "dev-master",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chevereto\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "symplify/easy-coding-standard": "^9.0",
+        "vimeo/psalm": "^4.3"
+    },
+    "scripts": {
+        "report": "vendor/bin/phpunit -c phpunit-report.xml",
+        "test": "vendor/bin/phpunit -c phpunit.xml",
+        "qa": "vendor/bin/psalm",
+        "cs": "vendor/bin/ecs check src --fix --ansi"
+    },
+    "scripts-descriptions": {
+        "report": "Run all tests with report",
+        "test": "Run all tests",
+        "qa": "Run quality assurance",
+        "cs": "Run coding standard"
+    }
+}
