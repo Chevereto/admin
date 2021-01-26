@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "chevere/chevere": "dev-master",
+        "chevere/chevere": "dev-main",
         "phpunit/phpunit": "^9.5"
     },
     "autoload": {
